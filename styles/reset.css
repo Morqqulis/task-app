@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button,
+a {
+	transition: 0.3s ease 0s;
+	transition-property: color, background-color, border-color, scale;
+	cursor: pointer;
+	border: none;
+	background-color: inherit;
+	color: inherit;
+	white-space: nowrap;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: inherit;
+}
+
+html,
+body.wrapper {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+
+	> main {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+}
+
+body {
+	background-color: var(--background);
+	color: var(--foreground);
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Inter', sans-serif;
+}
+
+[class*='__container'] {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1310px;
+}
